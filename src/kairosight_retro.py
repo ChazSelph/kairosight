@@ -6,7 +6,7 @@ import numpy as np
 from matplotlib.animation import FuncAnimation
 from numpy import loadtxt, savetxt, save, load
 
-from analysisfiles import ImagingAnalysis
+import ImagingAnalysis
 
 from util.preparation import open_stack
 from util.processing import (filter_spatial_stack, filter_temporal,
@@ -21,7 +21,7 @@ from PyQt5.QtCore import (QObject, pyqtSignal, QRunnable,
                           pyqtSlot, QThreadPool)
 from PyQt5.QtWidgets import (QApplication, QWidget, QFileDialog, QMessageBox)
 from matplotlib.figure import Figure
-from matplotlib.backends.backend_qt4agg import (
+from matplotlib.backends.backend_qt5agg import (
     FigureCanvasQTAgg as FigureCanvas)
 import matplotlib.pyplot as plt
 import matplotlib.colors as colors
